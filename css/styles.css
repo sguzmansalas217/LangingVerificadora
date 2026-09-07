@@ -224,6 +224,7 @@ a { text-decoration: none; color: inherit; }
 .card:nth-child(2) { --accent: var(--verde); }
 .card:nth-child(3) { --accent: var(--rosa); }
 .card:nth-child(4) { --accent: var(--teal); }
+.card:nth-child(5) { --accent: var(--azul-oscuro); }
 
 .card-icon {
   display: flex;
@@ -276,6 +277,8 @@ a { text-decoration: none; color: inherit; }
 .fuel-tag.fuel-gasolina { background: var(--azul); }
 .fuel-tag.fuel-gaslp { background: var(--rosa); }
 .fuel-tag.fuel-diesel { background: var(--verde-oscuro); }
+.fuel-tag.fuel-tag-consulta { background: var(--azul); }
+.fuel-tag.fuel-tag-pago { background: var(--verde-oscuro); }
 
 /* Calendario */
 .calendario-intro {
