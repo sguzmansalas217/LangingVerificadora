@@ -199,6 +199,43 @@ a { text-decoration: none; color: inherit; }
 .card h3 { margin-top: 0; color: var(--accent, var(--azul)); font-size: 1.05rem; }
 .card p { margin-bottom: 0; font-size: 0.95rem; }
 
+.fuel-highlight {
+  margin-top: 32px;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.fuel-highlight-title {
+  margin: 0 0 18px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--azul-oscuro);
+}
+.fuel-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.fuel-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 1rem;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.fuel-tag.fuel-gasolina { background: var(--azul); }
+.fuel-tag.fuel-gaslp { background: var(--rosa); }
+.fuel-tag.fuel-diesel { background: var(--verde-oscuro); }
+
 /* Calendario */
 .calendario-intro {
   max-width: 760px;
@@ -256,8 +293,37 @@ a { text-decoration: none; color: inherit; }
 }
 .contact-info h2 { text-align: left; }
 .contact-info ul { list-style: none; padding: 0; margin: 0; }
-.contact-info li { margin-bottom: 14px; }
 .contact-info a:hover { color: var(--azul); }
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.contact-list strong { font-size: 0.85rem; }
+.contact-list a { font-weight: 600; font-size: 0.9rem; }
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.contact-icon-tel { background: #25d366; }
+.contact-icon-correo { background: var(--azul); }
+.contact-icon-direccion { background: var(--rosa); }
+.wa-link {
+  display: inline-flex;
+  margin-left: 6px;
+  color: #25d366;
+  font-size: 1rem;
+}
 
 .contact-map iframe {
   width: 100%;
